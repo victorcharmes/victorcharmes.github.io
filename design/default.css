@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'BBH';
+    src: url('../src/AlfaSlabOne-Regular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #f4f7f622;
+    font-family: BBH, sans-serif;
+    font-size: 16px; /* ⬅️ IMPORTANT */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    background-color: #1D1D1D;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+h2 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+/* ===== NAV ===== */
+.main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.05);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== CONTENU ===== */
+
+
+
+/* ===== PROJETS ===== */
+.projet{
+    /* Each project will keep a fixed max width but shrink on small screens */
+    flex: 0 1 400px;
+    margin: 15px;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.699);
+    padding-bottom: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 0px black solid;
+    border-radius: 10px;
+    overflow: hidden;
+} 
+
+.projet:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition : 0.3s;
+}
+
+
+.projet img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    min-height: 200px; /* keeps reasonable height while remaining responsive */
+} 
+.projet .date_projet{
+    font-size : 1em;
+}
+.projet span{
+    text-transform: uppercase;
+    font-size : 1.8em;
+    display : block;
+}
+.picture{
+    width: 100%;
+    height: 266px;
+    overflow: hidden;
+    margin-bottom: 10px;
+} 
+
+#projets{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right : 10%;
+    margin-left : 10%;
+}
+#projets a {
+    text-decoration: none;
+    color: black;
+}
+
+#projets a:hover {
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+}
+/*===== Contact ===== */
+#contact{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin: 1rem auto 1rem;
+    padding: 0.75rem 1rem;
+    max-width: 600px;
+    box-sizing: border-box;
+
+}
+
+#contact p {
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+#contact a{
+    color: black;
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+#contact a:hover {
+    font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #1D1D1D;
+    color: white;
+    text-align: left;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+
