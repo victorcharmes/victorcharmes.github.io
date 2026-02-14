@@ -14,26 +14,86 @@
 
 <header>
     <h1>Victor Charmes</h1>
-    <h2>Développeur full-stack</h2>
+    <h2>Étudiant en licence d'informatique</h2>
 </header>
 
 <main>
-    <nav class="main-nav">
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="#projet1">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<nav class="main-nav">
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#projet1">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<div>
+    <p id="description">
+        Durant mes trois années en tant qu'apprenti ingénieur maintenance au sein du service maintenance de MBDA Missile Systems, j'ai été amené à utiliser quotidiennement une GMAO (Gestion de Maintenance Assistée par Ordinateur).
 
+        Une GMAO est un outil central de planification, d'organisation et de suivi des activités d'un service maintenance. Cette expérience m'a permis de comprendre les enjeux métier liés à ce type de logiciel : gestion des interventions, traçabilité, optimisation des ressources et fiabilité des données.
 
-    <div id="projet1">
+        J'ai également identifié plusieurs limites fonctionnelles et techniques dans l'outil utilisé, ce qui m'a conduit à concevoir et développer ma propre solution de GMAO, pensée pour répondre aux besoins réels des équipes terrain et améliorer l'expérience utilisateur.
+
+        <br><br>
+        <u>Technologies utilisées :</u> Java (Spring Boot), React, MySQL
+    </p>
+
+    <p>
+        <u style="margin: 10px">Features:</u>
         <ul>
-            <li><img src="pictures/chien.jpg" alt="x" id ="chien"/></li>
-            <li><img src="pictures/chien.jpg" alt="x" id ="chien"/></li>
-            <li><img src="pictures/chien.jpg" alt="x" id ="chien"/></li>
+            <li>Gestion des machines : visualisation, création et modification des équipements</li>
+            <li>Gestion des pannes : suivi, déclaration et mise à jour des incidents</li>
+            <li>Gestion des interventions : création et planification d'interventions liées à une panne existante</li>
+            <li>Gestion des stocks : consultation, ajout et mise à jour des pièces détachées</li>
+            <li>Création d'indicateurs de performance (KPI) : calcul des temps d'arrêt sur plages variables, calcul du temps moyen de réparation (MTTR), mise en forme des données</li>
+            <li>Gestion des profils utilisateurs : technicien de maintenance, administrateur GMAO, responsable de production</li>
         </ul>
-    </div>
+        <div id="description">
+            <p>
+                Ce projet repose principalement sur la mise en œuvre de fonctionnalités CRUD (Create, Read, Update, Delete). 
+                Il intègre également une partie plus avancée dédiée au calcul des indicateurs de maintenance, nécessitant la gestion de données temporelles et le traitement d'informations variables.
+            </p>
+
+            <p>
+                L'objectif était de développer une application full-stack de bout en bout : conception de la base de données, développement du backend et réalisation de l'interface utilisateur. 
+                Ce projet m'a permis de découvrir et d'approfondir le framework Spring Boot côté backend, tout en consolidant mes compétences en développement frontend avec React.
+            </p>
+        </div>
+    </p>
+    <p style="margin: 10px">
+        <u>Etat actuel du projet 15/02/2026:</u>
+        <ul>
+            <li>
+                Gestion de l'authentification des utilisateurs
+                <br>
+                <img src="pictures/photosGMAO/id.png" alt="id" style="max-width: 400px;"/>
+            </li>
+            <li>
+                Gestion des machines
+                <br>
+                <img src="pictures/photosGMAO/pageMachine.png" alt="id" style="max-width: 600px;"/>
+                <br>
+                <p>
+                    L'écriture en base de données est réalisée via les fonctionnalités d'ajout et de modification des machines.
+                </p>
+            </li>
+            <li>
+                Base de données structurée, peuplée avec des données initiales et stabilisée.
+                <br>
+                <img src="pictures/photosGMAO/diagBD.png" alt="id" style="max-width: 700px;"/>
+            </li>
+        </ul>
+    </p>
+    <p style="margin: 10px">
+        <u>Reste à faire:</u>
+        <ul>
+            <li> Gestion pannes, intervention et stock de pièces </li>
+            <li> Création et mise en forme des inficateurs </li>
+        </ul>
+        <p style="margin: 10px">
+                <u>Points d'attention :</u> conception et implémentation des supports de visualisation des indicateurs de performance (diagrammes circulaires, histogrammes, graphiques temporels, ...).
+        </p>
+    </p>
+</div>
     
 <div id="contact">
   <p>
@@ -47,7 +107,7 @@
 </main>
 
 <footer id="footer">
-    <p>2025 &copy; Victor Charmes</p>
+    <p>2026 &copy; Victor Charmes</p>
 </footer>
 
 </body>
